@@ -46,20 +46,16 @@ const contactValidation = [
         .notEmpty().withMessage('Please select a service')
         .isIn([
             'Education ERP',
-            'Admission Portal',
             'Website Development',
             'Custom Software',
-            'Mobile App Development',
-            'Automation Solutions',
-            'Cloud & Hosting',
-            'Digital Marketing',
+            'Mobile App',
             'Other'
-        ]).withMessage('Invalid service selection'),
+        ]).withMessage('Please select a valid service from the list'),
 
     body('message')
         .trim()
         .notEmpty().withMessage('Message is required')
-        .isLength({ min: 10, max: 1000 }).withMessage('Message must be between 10 and 1000 characters')
+        .isLength({ min: 10, max: 2000 }).withMessage('Message must be between 10 and 2000 characters')
 ];
 
 // Routes

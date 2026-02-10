@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+.env
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+logs/
+uploads/
+.vscode
+.idea
+*.swp
+*.swo
+package-lock.json

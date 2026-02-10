@@ -22,11 +22,12 @@ app.use(helmet({
     contentSecurityPolicy: {
         directives: {
             defaultSrc: ["'self'"],
-            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-            fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "https://www.google.com", "https://www.gstatic.com"],
-            frameSrc: ["https://www.google.com"],
+            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdnjs.cloudflare.com"],
+            fontSrc: ["'self'", "https://fonts.gstatic.com", "https://cdnjs.cloudflare.com"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "https://www.google.com", "https://www.gstatic.com", "https://cdnjs.cloudflare.com", "https://www.googletagmanager.com"],
+            frameSrc: ["'self'", "https://www.google.com"],
             imgSrc: ["'self'", "data:", "https:"],
+            connectSrc: ["'self'", "https:", "https://www.google-analytics.com"],
         },
     },
 }));
@@ -59,7 +60,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use((req, res, next) => {
     res.locals.recaptchaSiteKey = process.env.RECAPTCHA_SITE_KEY;
     res.locals.companyName = process.env.COMPANY_NAME || 'Karmanya Infotech Pvt. Ltd.';
-    res.locals.companyEmail = process.env.COMPANY_EMAIL || 'karmanyainfotech@zohomail.com';
+    res.locals.companyEmail = process.env.COMPANY_EMAIL || 'info@karmanyainfotech.com';
     res.locals.currentPath = req.path;
     next();
 });

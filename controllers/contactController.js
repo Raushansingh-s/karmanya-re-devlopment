@@ -7,8 +7,8 @@ const path = require('path');
 // Show contact/demo request form
 exports.showContactForm = (req, res) => {
     res.render('contact', {
-        title: 'Request Demo - Contact Us | Karmanya Infotech',
-        metaDescription: 'Request a free demo of our Education ERP, Admission Portal, or other IT solutions. Contact Karmanya Infotech for custom software development in Bihar.',
+        title: 'Contact Us | Karmanya Infotech',
+        metaDescription: 'Get in touch with Karmanya Infotech for expert IT solutions, Education ERP, and custom software development.',
         errors: [],
         formData: {}
     });
@@ -16,13 +16,12 @@ exports.showContactForm = (req, res) => {
 
 // Handle contact form submission
 exports.submitContactForm = async (req, res) => {
-    // Validate input
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
         return res.render('contact', {
-            title: 'Request Demo - Contact Us | Karmanya Infotech',
-            metaDescription: 'Request a free demo of our Education ERP solutions',
+            title: 'Contact Us | Karmanya Infotech',
+            metaDescription: 'Get in touch with Karmanya Infotech for expert IT solutions',
             errors: errors.array(),
             formData: req.body
         });
@@ -39,7 +38,6 @@ exports.submitContactForm = async (req, res) => {
             message
         } = req.body;
 
-        // Create contact record
         const contact = new Contact({
             fullName,
             email,
@@ -53,19 +51,14 @@ exports.submitContactForm = async (req, res) => {
         });
 
         await contact.save();
-
-        // Log to file
         await logContactSubmission(contact);
 
-        // Send email notification
         try {
             await emailService.sendContactNotification(contact);
         } catch (emailError) {
             console.error('Email sending failed:', emailError);
-            // Don't fail the request if email fails
         }
 
-        // Render success page
         res.render('contact-success', {
             title: 'Thank You! | Karmanya Infotech',
             metaDescription: 'Thank you for contacting us',
@@ -74,10 +67,9 @@ exports.submitContactForm = async (req, res) => {
 
     } catch (error) {
         console.error('Contact form submission error:', error);
-
         res.render('contact', {
-            title: 'Request Demo - Contact Us | Karmanya Infotech',
-            metaDescription: 'Request a free demo of our Education ERP solutions',
+            title: 'Contact Us | Karmanya Infotech',
+            metaDescription: 'An error occurred while submitting your inquiry',
             errors: [{ msg: 'An error occurred. Please try again later.' }],
             formData: req.body
         });
@@ -90,21 +82,8 @@ async function logContactSubmission(contact) {
     const logFile = path.join(logDir, 'contact-submissions.log');
 
     try {
-        // Create logs directory if it doesn't exist
         await fs.mkdir(logDir, { recursive: true });
-
-        const logEntry = `
-[${new Date().toISOString()}]
-Name: ${contact.fullName}
-Email: ${contact.email}
-Mobile: ${contact.mobile}
-Organization: ${contact.organizationName} (${contact.organizationType})
-Service: ${contact.serviceInterested}
-Message: ${contact.message}
-IP: ${contact.ipAddress}
--------------------------------------------
-`;
-
+        const logEntry = `\n[${new Date().toISOString()}] Name: ${contact.fullName} | Email: ${contact.email} | Service: ${contact.serviceInterested}\n`;
         await fs.appendFile(logFile, logEntry);
     } catch (error) {
         console.error('Logging error:', error);

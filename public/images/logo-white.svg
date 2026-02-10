@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
-  <!-- Text -->
-  <text x="100" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="#ffffff">Karmanya</text>
-  <text x="310" y="70" font-family="Arial, sans-serif" font-weight="normal" font-size="40" fill="#fb923c">Infotech</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 280">
+    <g transform="translate(40, 20)">
+        <g transform="translate(100, 110)">
+            <path d="M -40,-100 C -60,-100 -80,-80 -80,-50 C -80,-30 -70,-20 -75,-10 C -85,-10 -95,-5 -95,10 C -95,20 -85,25 -80,25 L -80,40 C -80,60 -60,80 -40,80 L 20,80 C 40,80 60,60 60,40 C 60,20 80,0 80,-40 C 80,-80 40,-100 -40,-100 Z" fill="#ffffff" />
+            <g stroke="#0369a1" stroke-width="2.5" stroke-linecap="round">
+                <path d="M -20,-80 L -20,-30 M 15,-70 L 15,-20 M -45,-60 L -45,-10" />
+                <circle cx="-20" cy="-80" r="4.5" fill="#0369a1" />
+                <circle cx="15" cy="-70" r="4.5" fill="#0369a1" />
+                <circle cx="-45" cy="-60" r="4.5" fill="#0369a1" />
+            </g>
+        </g>
+        <g transform="translate(230, 125)" font-family="Arial Black, Impact, sans-serif">
+            <text y="0" font-size="110" fill="#ffffff" font-weight="900" letter-spacing="-2">KARMANYA</text>
+            <g transform="translate(5, 70)">
+                <text font-size="42" fill="#f97316" letter-spacing="16" font-weight="900">
+                    INFO <tspan fill="#ffffff">↑</tspan> TECH
+                </text>
+            </g>
+        </g>
+    </g>
 </svg>

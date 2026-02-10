@@ -16,18 +16,35 @@
     <meta name="author" content="Karmanya Infotech Pvt. Ltd.">
     <meta name="robots" content="index, follow">
 
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="your_verification_code_here">
+
+    <!-- Google Analytics (GA4) -->
+    <!-- Replace G-XXXXXXXXXX with your actual Measurement ID -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://karmanyainfotech.com/">
+    <meta property="og:url" content="https://karmanyainfotech.com<%= currentPath %>">
+    <meta property="og:site_name" content="Karmanya Infotech">
     <meta property="og:title" content="<%= title %>">
     <meta property="og:description" content="<%= metaDescription %>">
-    <meta property="og:image" content="/images/hero-illustration.svg">
+    <meta property="og:image" content="https://karmanyainfotech.com/images/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://karmanyainfotech.com/">
+    <meta property="twitter:url" content="https://karmanyainfotech.com<%= currentPath %>">
     <meta property="twitter:title" content="<%= title %>">
     <meta property="twitter:description" content="<%= metaDescription %>">
+    <meta property="twitter:image" content="https://karmanyainfotech.com/images/og-image.jpg">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://karmanyainfotech.com<%= currentPath %>">
@@ -42,8 +59,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/css/style.css">
@@ -51,25 +68,83 @@
 
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Karmanya Infotech Pvt. Ltd.",
-    "url": "https://karmanyainfotech.com",
-    "logo": "https://karmanyainfotech.com/images/logo.svg",
-    "foundingDate": "2022",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "IN"
-    },
-    "email": "karmanyainfotech@zohomail.com",
-    "description": "Leading IT solutions provider offering Education ERP, Software Development, and Digital Services",
-    "sameAs": [
-      "https://www.linkedin.com/company/karmanya-infotech",
-      "https://twitter.com/karmanyainfotech"
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Karmanya Infotech Pvt. Ltd.",
+            "url": "https://karmanyainfotech.com",
+            "logo": "https://karmanyainfotech.com/images/logo.svg",
+            "foundingDate": "2022",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Beside New G.D Mother International School, Near Saguna More",
+                "addressLocality": "Khagaul",
+                "addressRegion": "Patna Road",
+                "postalCode": "801503",
+                "addressCountry": "IN"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-XXXXXXXXXX",
+                "contactType": "sales",
+                "email": "karmanyainfotech@zohomail.com"
+            },
+            "sameAs": [
+                "https://www.linkedin.com/company/karmanya-infotech",
+                "https://twitter.com/karmanyainfotech",
+                "https://www.facebook.com/karmanya.infotech",
+                "https://www.instagram.com/karmanya.infotech"
+            ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Karmanya Infotech",
+            "url": "https://karmanyainfotech.com",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://karmanyainfotech.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Karmanya Infotech",
+            "image": "https://karmanyainfotech.com/images/hero-card-img.png",
+            "@id": "https://karmanyainfotech.com",
+            "url": "https://karmanyainfotech.com",
+            "telephone": "+91-XXXXXXXXXX",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Saguna More, Khagaul",
+                "addressLocality": "Patna",
+                "addressRegion": "Bihar",
+                "postalCode": "801503",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 25.5941,
+                "longitude": 85.0440
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+            }
+        }
     ]
-  }
-  </script>
+    </script>
 </head>
 
 <body>
@@ -100,7 +175,6 @@
                         <li><a href="/about" class="<%= currentPath === '/about' ? 'active' : '' %>">About Us</a></li>
                         <li><a href="/contact" class="<%= currentPath === '/contact' ? 'active' : '' %>">Contact</a>
                         </li>
-                        <li><a href="/contact" class="btn-primary-nav">Get Demo</a></li>
                     </ul>
                 </div>
             </div>
