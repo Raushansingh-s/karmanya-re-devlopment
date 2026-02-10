@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#f5f3ff" />
+  
+  <!-- Server Rack -->
+  <rect x="150" y="50" width="200" height="300" rx="5" fill="#1e1b4b" />
+  
+  <!-- Server Units -->
+  <rect x="160" y="70" width="180" height="40" rx="2" fill="#312e81" />
+  <circle cx="175" cy="90" r="3" fill="#4ade80" />
+  <rect x="190" y="85" width="100" height="4" fill="#4338ca" />
+  
+  <rect x="160" y="120" width="180" height="40" rx="2" fill="#312e81" />
+  <circle cx="175" cy="140" r="3" fill="#4ade80" />
+  <rect x="190" y="135" width="100" height="4" fill="#4338ca" />
+  
+  <rect x="160" y="170" width="180" height="40" rx="2" fill="#312e81" />
+  <circle cx="175" cy="190" r="3" fill="#ef4444" /> <!-- Alert -->
+  <rect x="190" y="185" width="100" height="4" fill="#4338ca" />
+  
+  <!-- Cloud Connection -->
+  <path d="M400 100 C 420 80, 460 80, 470 110 C 490 120, 480 150, 450 150 L 390 150 C 370 140, 370 110, 400 100" fill="#ffffff" stroke="#3b82f6" stroke-width="2" />
+  <line x1="350" y1="125" x2="380" y2="125" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,5" />
+</svg>

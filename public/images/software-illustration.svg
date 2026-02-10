@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#fefce8" />
+  
+  <!-- Code Screen -->
+  <rect x="50" y="50" width="400" height="300" rx="5" fill="#1f2937" />
+  <circle cx="70" cy="70" r="5" fill="#ef4444" />
+  <circle cx="90" cy="70" r="5" fill="#eab308" />
+  <circle cx="110" cy="70" r="5" fill="#22c55e" />
+  
+  <!-- Code Lines -->
+  <rect x="70" y="100" width="100" height="10" fill="#c084fc" />
+  <rect x="180" y="100" width="150" height="10" fill="#60a5fa" />
+  
+  <rect x="90" y="130" width="80" height="10" fill="#f472b6" />
+  <rect x="180" y="130" width="120" height="10" fill="#9ca3af" />
+  
+  <rect x="90" y="160" width="200" height="10" fill="#9ca3af" />
+  
+  <rect x="110" y="190" width="150" height="10" fill="#34d399" />
+  
+  <!-- Gear Icon (Settings/Custom) -->
+  <g transform="translate(350, 250)">
+    <circle cx="0" cy="0" r="40" fill="#f97316" />
+    <circle cx="0" cy="0" r="15" fill="#1f2937" />
+    <path d="M-10 -45 L10 -45 L15 -25 L-15 -25 Z" fill="#f97316" />
+    <path d="M-10 45 L10 45 L15 25 L-15 25 Z" fill="#f97316" />
+    <path d="M-45 -10 L-45 10 L-25 15 L-25 -15 Z" fill="#f97316" />
+    <path d="M45 -10 L45 10 L25 15 L25 -15 Z" fill="#f97316" />
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#f0f9ff" />
+  <rect x="100" y="50" width="300" height="300" rx="15" fill="#ffffff" stroke="#3b82f6" stroke-width="2" />
+  
+  <!-- Header -->
+  <rect x="100" y="50" width="300" height="50" rx="15 15 0 0" fill="#3b82f6" />
+  <text x="250" y="85" text-anchor="middle" font-family="Arial" fill="white" font-weight="bold">Education ERP</text>
+  
+  <!-- Modules Grid -->
+  <rect x="130" y="130" width="60" height="60" rx="8" fill="#e0f2fe" />
+  <rect x="220" y="130" width="60" height="60" rx="8" fill="#ffedd5" />
+  <rect x="310" y="130" width="60" height="60" rx="8" fill="#dcfce7" />
+  
+  <rect x="130" y="220" width="60" height="60" rx="8" fill="#f3e8ff" />
+  <rect x="220" y="220" width="60" height="60" rx="8" fill="#fae8ff" />
+  <rect x="310" y="220" width="60" height="60" rx="8" fill="#fee2e2" />
+  
+  <!-- Icons placeholder -->
+  <circle cx="160" cy="160" r="10" fill="#3b82f6" />
+  <circle cx="250" cy="160" r="10" fill="#f97316" />
+  <circle cx="340" cy="160" r="10" fill="#10b981" />
+</svg>

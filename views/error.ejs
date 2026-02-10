@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+    <!-- Error Section -->
+    <section class="error-section">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-code">500</div>
+                <h1>Something Went Wrong</h1>
+                <p>We're sorry, but something unexpected happened. Our team has been notified.</p>
+
+                <div class="error-actions">
+                    <a href="/" class="btn-primary btn-large">Go to Homepage</a>
+                    <a href="/contact" class="btn-secondary btn-large">Report Issue</a>
+                </div>
+
+                <% if (error && error.message) { %>
+                    <div class="error-details">
+                        <h3>Error Details:</h3>
+                        <pre><%= error.message %></pre>
+                        <% if (error.stack) { %>
+                            <pre><%= error.stack %></pre>
+                            <% } %>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </section>
+
+    <%- include('partials/footer') %>

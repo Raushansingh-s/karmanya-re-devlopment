@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#fff7ed" />
+  
+  <!-- Form Paper -->
+  <rect x="150" y="50" width="200" height="300" fill="#ffffff" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.1))" />
+  
+  <!-- Form Lines -->
+  <rect x="170" y="80" width="60" height="60" fill="#f3f4f6" /> <!-- Photo placeholder -->
+  <rect x="240" y="80" width="90" height="10" rx="2" fill="#d1d5db" />
+  <rect x="240" y="100" width="70" height="10" rx="2" fill="#d1d5db" />
+  
+  <rect x="170" y="160" width="160" height="10" rx="2" fill="#e5e7eb" />
+  <rect x="170" y="190" width="160" height="10" rx="2" fill="#e5e7eb" />
+  <rect x="170" y="220" width="160" height="10" rx="2" fill="#e5e7eb" />
+  
+  <rect x="170" y="270" width="160" height="40" rx="4" fill="#f97316" />
+  <text x="250" y="295" text-anchor="middle" fill="white" font-family="Arial" font-size="12">SUBMIT APPLICATION</text>
+  
+  <!-- Checkmark -->
+  <circle cx="380" cy="200" r="40" fill="#10b981" />
+  <path d="M365 200 L375 210 L395 190" stroke="white" stroke-width="5" fill="none" />
+</svg>

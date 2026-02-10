@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#fdf4ff" />
+  
+  <!-- Megaphone -->
+  <path d="M100 200 L150 150 L250 120 L250 280 L150 250 L100 200 Z" fill="#d946ef" />
+  <rect x="80" y="180" width="20" height="40" rx="5" fill="#a21caf" />
+  
+  <!-- Sound Waves -->
+  <path d="M280 150 Q 300 200 280 250" fill="none" stroke="#f97316" stroke-width="5" />
+  <path d="M310 130 Q 340 200 310 270" fill="none" stroke="#f97316" stroke-width="5" />
+  <path d="M340 110 Q 380 200 340 290" fill="none" stroke="#f97316" stroke-width="5" />
+  
+  <!-- Analytics Chart Background -->
+  <path d="M0 350 L500 350 L500 400 L0 400 Z" fill="#fae8ff" />
+  <path d="M350 350 L400 300 L450 320 L500 250" fill="none" stroke="#10b981" stroke-width="3" />
+  
+  <!-- Social Icons placeholders -->
+  <circle cx="400" cy="100" r="20" fill="#3b82f6" />
+  <circle cx="450" cy="150" r="20" fill="#ef4444" />
+</svg>

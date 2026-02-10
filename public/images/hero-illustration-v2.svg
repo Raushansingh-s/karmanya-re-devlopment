@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#f0f9ff" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Dashboard Container -->
+  <g transform="translate(100, 50)">
+    <!-- Shadow -->
+    <rect x="50" y="50" width="600" height="400" rx="20" fill="#000" fill-opacity="0.1" filter="url(#glow)" />
+    
+    <!-- Window Base -->
+    <rect x="0" y="0" width="600" height="400" rx="16" fill="#fff" stroke="#e2e8f0" stroke-width="2" />
+    
+    <!-- Window Header -->
+    <path d="M0 16C0 7.16344 7.16344 0 16 0H584C592.837 0 600 7.16344 600 16V40H0V16Z" fill="#f8fafc" />
+    <circle cx="24" cy="20" r="6" fill="#ef4444" />
+    <circle cx="44" cy="20" r="6" fill="#f59e0b" />
+    <circle cx="64" cy="20" r="6" fill="#22c55e" />
+    
+    <!-- Sidebar -->
+    <rect x="0" y="40" width="140" height="360" fill="#f1f5f9" opacity="0.5" />
+    <rect x="20" y="70" width="80" height="12" rx="4" fill="#cbd5e1" />
+    <rect x="20" y="100" width="100" height="12" rx="4" fill="#cbd5e1" />
+    <rect x="20" y="130" width="90" height="12" rx="4" fill="#cbd5e1" />
+    <rect x="20" y="160" width="70" height="12" rx="4" fill="#cbd5e1" />
+
+    <!-- Main Content Area -->
+    <g transform="translate(160, 60)">
+      <!-- Header Area -->
+      <rect x="0" y="0" width="420" height="80" rx="8" fill="url(#headerGrad)" />
+      <rect x="20" y="20" width="150" height="16" rx="4" fill="#fff" fill-opacity="0.3" />
+      <rect x="20" y="45" width="100" height="12" rx="4" fill="#fff" fill-opacity="0.2" />
+      
+      <!-- Charts Row -->
+      <g transform="translate(0, 100)">
+        <!-- Chart 1 -->
+        <rect x="0" y="0" width="200" height="140" rx="8" fill="#fff" stroke="#e2e8f0" />
+        <path d="M20 100 L60 70 L100 90 L140 40 L180 60" stroke="#3b82f6" stroke-width="3" fill="none" />
+        <circle cx="20" cy="100" r="4" fill="#3b82f6" />
+        <circle cx="60" cy="70" r="4" fill="#3b82f6" />
+        <circle cx="100" cy="90" r="4" fill="#3b82f6" />
+        <circle cx="140" cy="40" r="4" fill="#3b82f6" />
+        <circle cx="180" cy="60" r="4" fill="#3b82f6" />
+        
+        <!-- Chart 2 -->
+        <rect x="220" y="0" width="200" height="140" rx="8" fill="#fff" stroke="#e2e8f0" />
+        <rect x="240" y="40" width="20" height="80" rx="2" fill="#f97316" fill-opacity="0.8" />
+        <rect x="270" y="60" width="20" height="60" rx="2" fill="#f97316" fill-opacity="0.6" />
+        <rect x="300" y="30" width="20" height="90" rx="2" fill="#f97316" fill-opacity="0.8" />
+        <rect x="330" y="50" width="20" height="70" rx="2" fill="#f97316" fill-opacity="0.6" />
+        <rect x="360" y="20" width="20" height="100" rx="2" fill="#f97316" fill-opacity="0.8" />
+      </g>
+      
+      <!-- Bottom Row -->
+      <g transform="translate(0, 260)">
+        <rect x="0" y="0" width="130" height="60" rx="8" fill="#fff" stroke="#e2e8f0" />
+        <circle cx="30" cy="30" r="15" fill="#e0f2fe" />
+        <rect x="150" y="0" width="130" height="60" rx="8" fill="#fff" stroke="#e2e8f0" />
+        <circle cx="180" cy="30" r="15" fill="#ffedd5" />
+        <rect x="300" y="0" width="120" height="60" rx="8" fill="#fff" stroke="#e2e8f0" />
+        <circle cx="330" cy="30" r="15" fill="#dcfce7" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Floating Elements -->
+  <!-- Cloud Icon -->
+  <g transform="translate(650, 40)">
+    <circle cx="40" cy="40" r="40" fill="#fff" filter="url(#glow)" />
+    <path d="M25 45H55C59 45 61 41 61 38C61 34 58 32 55 32C55 25 48 22 43 25C40 20 32 20 28 26C23 25 19 28 19 34C19 41 21 45 25 45Z" fill="#3b82f6" />
+  </g>
+
+  <!-- Mobile Icon -->
+  <g transform="translate(40, 300)">
+    <rect x="0" y="0" width="60" height="100" rx="10" fill="#fff" filter="url(#glow)" />
+    <rect x="5" y="5" width="50" height="90" rx="6" fill="#1e293b" />
+    <rect x="15" y="20" width="30" height="40" rx="2" fill="#3b82f6" />
+    <rect x="15" y="65" width="20" height="4" rx="2" fill="#64748b" />
+    <rect x="15" y="75" width="30" height="4" rx="2" fill="#64748b" />
+  </g>
+
+  <!-- Analytics Icon -->
+  <g transform="translate(680, 400)">
+    <circle cx="40" cy="40" r="40" fill="#fff" filter="url(#glow)" />
+    <path d="M25 50L35 35L45 45L60 25" stroke="#f97316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)" />
+  
+  <!-- Abstract Shapes -->
+  <circle cx="400" cy="300" r="200" fill="#3b82f6" opacity="0.1" />
+  <rect x="100" y="100" width="100" height="100" rx="20" fill="#f97316" opacity="0.1" />
+  
+  <!-- Laptop/Screen Representation -->
+  <rect x="200" y="150" width="400" height="250" rx="10" fill="#ffffff" stroke="#1e40af" stroke-width="2" />
+  <rect x="200" y="150" width="400" height="20" rx="10 10 0 0" fill="#1e40af" />
+  <circle cx="215" cy="160" r="3" fill="#ffffff" />
+  <circle cx="225" cy="160" r="3" fill="#ffffff" />
+  <circle cx="235" cy="160" r="3" fill="#ffffff" />
+  
+  <!-- Dashboard lines -->
+  <rect x="220" y="190" width="100" height="80" rx="4" fill="#eff6ff" />
+  <rect x="330" y="190" width="250" height="20" rx="4" fill="#f3f4f6" />
+  <rect x="330" y="220" width="250" height="20" rx="4" fill="#f3f4f6" />
+  <rect x="330" y="250" width="250" height="20" rx="4" fill="#f3f4f6" />
+  
+  <!-- Charts -->
+  <rect x="220" y="300" width="360" height="80" rx="4" fill="#eff6ff" />
+  <path d="M240 360 L280 330 L320 350 L360 310 L400 340 L560 320" fill="none" stroke="#3b82f6" stroke-width="3" />
+  
+  <!-- Floating Elements -->
+  <circle cx="650" cy="150" r="40" fill="#f97316" opacity="0.2" />
+  <rect x="150" y="450" width="60" height="60" rx="10" fill="#3b82f6" opacity="0.2" transform="rotate(15 180 480)" />
+</svg>

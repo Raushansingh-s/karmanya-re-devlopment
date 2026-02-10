@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+
+    <!-- Success Section -->
+    <section class="success-section">
+        <div class="container">
+            <div class="success-content">
+                <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+
+                <h1>Thank You, <%= contactName %>! 🎉</h1>
+
+                <p class="success-message">
+                    Your demo request has been successfully submitted. Our team will review your
+                    requirements and get back to you within 24 hours.
+                </p>
+
+                <div class="success-details">
+                    <div class="detail-card">
+                        <h3>📧 Check Your Email</h3>
+                        <p>We've sent a confirmation email with next steps</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>⏱️ Quick Response</h3>
+                        <p>Expect to hear from us within 24 hours</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>💬 Need Immediate Help?</h3>
+                        <p>WhatsApp us using the button below</p>
+                    </div>
+                </div>
+
+                <div class="success-actions">
+                    <a href="/" class="btn-primary btn-large">Back to Home</a>
+                    <a href="/services" class="btn-secondary btn-large">Explore Services</a>
+                </div>
+
+                <div class="success-footer">
+                    <p>
+                        <strong>What happens next?</strong><br>
+                        Our team will review your requirements and contact you to schedule a personalized
+                        demo at your convenience. We'll show you exactly how our solutions can benefit
+                        your institution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include('partials/footer') %>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#eff6ff" />
+  
+  <!-- Browser Window -->
+  <rect x="80" y="60" width="340" height="280" rx="8" fill="#ffffff" stroke="#1e40af" stroke-width="2" />
+  <rect x="80" y="60" width="340" height="30" rx="8 8 0 0" fill="#e5e7eb" />
+  <circle cx="100" cy="75" r="4" fill="#ef4444" />
+  <circle cx="115" cy="75" r="4" fill="#eab308" />
+  <circle cx="130" cy="75" r="4" fill="#22c55e" />
+  
+  <!-- Web Layout -->
+  <rect x="80" y="90" width="340" height="100" fill="#3b82f6" opacity="0.1" /> <!-- Hero -->
+  <rect x="100" y="110" width="150" height="20" rx="4" fill="#1e40af" opacity="0.6" />
+  <rect x="100" y="140" width="80" height="30" rx="4" fill="#f97316" />
+  
+  <rect x="100" y="210" width="90" height="100" rx="4" fill="#f3f4f6" />
+  <rect x="205" y="210" width="90" height="100" rx="4" fill="#f3f4f6" />
+  <rect x="310" y="210" width="90" height="100" rx="4" fill="#f3f4f6" />
+</svg>

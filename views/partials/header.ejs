@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>
+        <%= title %>
+    </title>
+    <meta name="description" content="<%= metaDescription %>">
+    <meta name="keywords"
+        content="Education ERP, College Management System, Student Information System, Admission Portal, IT Services, Software Development, Karmanya Infotech">
+    <meta name="author" content="Karmanya Infotech Pvt. Ltd.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://karmanyainfotech.com/">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= metaDescription %>">
+    <meta property="og:image" content="/images/hero-illustration.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://karmanyainfotech.com/">
+    <meta property="twitter:title" content="<%= title %>">
+    <meta property="twitter:description" content="<%= metaDescription %>">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://karmanyainfotech.com<%= currentPath %>">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pages.css">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Karmanya Infotech Pvt. Ltd.",
+    "url": "https://karmanyainfotech.com",
+    "logo": "https://karmanyainfotech.com/images/logo.svg",
+    "foundingDate": "2022",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    },
+    "email": "karmanyainfotech@zohomail.com",
+    "description": "Leading IT solutions provider offering Education ERP, Software Development, and Digital Services",
+    "sameAs": [
+      "https://www.linkedin.com/company/karmanya-infotech",
+      "https://twitter.com/karmanyainfotech"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <!-- Logo -->
+                    <a href="/" class="logo">
+                        <img src="/images/logo.svg" alt="Karmanya Infotech Logo">
+                        <!-- <span class="logo-text">Karmanya Infotech</span> -->
+                    </a>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <!-- Navigation Menu -->
+                    <ul class="nav-menu">
+                        <li><a href="/" class="<%= currentPath === '/' ? 'active' : '' %>">Home</a></li>
+                        <li><a href="/services" class="<%= currentPath === '/services' ? 'active' : '' %>">Services</a>
+                        </li>
+                        <li><a href="/erp-solution" class="<%= currentPath === '/erp-solution' ? 'active' : '' %>">ERP
+                                Solution</a></li>
+                        <li><a href="/about" class="<%= currentPath === '/about' ? 'active' : '' %>">About Us</a></li>
+                        <li><a href="/contact" class="<%= currentPath === '/contact' ? 'active' : '' %>">Contact</a>
+                        </li>
+                        <li><a href="/contact" class="btn-primary-nav">Get Demo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
