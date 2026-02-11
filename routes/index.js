@@ -9,6 +9,14 @@ router.get('/', (req, res) => {
     });
 });
 
+// Alternate landing page
+router.get('/home-new', (req, res) => {
+    res.render('home-separate', {
+        title: 'Karmanya Infotech - We Build Digital Future for Your Business',
+        metaDescription: 'Discover Karmanya Infotech\'s alternate home page design focused on web, mobile, and enterprise software solutions for modern businesses.'
+    });
+});
+
 // About page
 router.get('/about', (req, res) => {
     res.render('about', {
